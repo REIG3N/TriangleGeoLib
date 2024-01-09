@@ -5,14 +5,39 @@
  * @returns {boolean} True if the triangle is rectangle, false otherwise.
  */
 
-export function isRectangle(a, b, c) {
-  if (!Array.isArray(data) || !data.every(Number.isFinite)) {
-    return console.error("Veuillez entrer des nombres valides.");
+export default function isRectangle(data) {
+  if (!Array.isArray(data) || !data.every(Number.isFinite || Number.length == 3)) {
+    return NaN;
   }
-  const sides = [a, b, c].sort((x, y) => x - y);
-  const isPythagorean = sides[0] ** 2 + sides[1] ** 2 === sides[2] ** 2;
-  return isPythagorean;
+  else {
+    if (data[0]**2 + data[1]**2 === data[2]**2) {
+      return true;
+    }else {
+      return false;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // // Test
 // const result = isRectangle(3, 4, 5);
