@@ -23,15 +23,14 @@ export default function thales(ab, am, ac, an) {
     // Return the suitable message if the result is a number
     if(!isNaN(ab) && !isNaN(am) && !isNaN(ac) && !isNaN(an) && result) {
 
-        const message = "Les segments MN et BC sont parrallèles selon le théorème de Thalès."
+        const message = "On a un point appartenant à une droite et un autre à l'autre droite.\nCes deux droites se croisent en un même point.\nDeux droites parrallèles sont compris dans cet ensemble, consituant donc un triangle, et d'après le théorème de Thalès sont donc parrallèles entre eux.\nPar conséquent, les rapports entre chaque droites sont tous égaux et de même valeur."
         return message // It is parallels if the equality beetween the ratio of the four sides is correct
 
     } else {
 
-        const message = "Les segments MN et BC ne sont pas parallèles selon le théorème de Thalès."
+        const message = "On a deux droites qui se croisent en un même point. Donc d'après le théorème de Thalès, les droites ne sont pas parrallèles entre eux.\nIl peuvent néanmoins constituer un triangle avec une droite rejoignant les extrémités qui ne correspondent aucunement au point de jointure.\nPar conséquent, les rapports entre ces droites sont différents et n'ont pas la même valeur."
         return message // It is not if the equality beetween the ratio of the four sides isn't correct
         
     }
 
 }
-  
