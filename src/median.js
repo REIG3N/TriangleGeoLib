@@ -8,8 +8,6 @@
 export default function median(length){
     const result = length / 2
 
-    console.log(`The median is : ${result}`) // For verify the calculus result directly
-
     // Convert number in a character strings
     const stringedNumber = length.toString();
 
