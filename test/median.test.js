@@ -9,13 +9,6 @@ describe('median()', () => {
 
   });
 
-  it('seven divided two is 3.5', () => {
-
-    const length = 7;
-    expect(length / 2).toBe(3.5);
-
-  });
-
   it("should return the exact median of a length if the result doesn't have numbers after comma", () => {
 
     const length = 7;
@@ -27,6 +20,6 @@ describe('median()', () => {
 
     const length = 1.5;
     expect(median(length)).toBe(`Exact Median result: 0.75 -> Rounded Median result : 0.8`);
-    
+
   });
 });
